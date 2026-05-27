@@ -8,4 +8,8 @@ Personal academic homepage hosted with GitHub Pages.
   PDF: [`rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf`](rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf)  
   Status: anonymous working draft.
 
-This repository is intentionally minimal: `index.html` is the public homepage, and the PDF above is the current public anonymous draft. 
+- **An Endpoint Observation and a Petri-Type Bottleneck for Landesman-Litt Isomonodromy**  
+  PDF: [`landesman-litt-endpoint-petri-bottleneck.pdf`](landesman-litt-endpoint-petri-bottleneck.pdf)  
+  Status: anonymous working note.
+
+This repository is intentionally minimal: `index.html` is the public homepage, and the PDFs above are the current public anonymous drafts.
