@@ -1,13 +1,11 @@
 # FDmd233.github.io
 
-Personal academic homepage hosted with GitHub Pages.
+Minimal GitHub Pages site for public mathematical drafts and Lean formalization links.
 
-## Papers
+## Contents
 
-- **A Rank (2g-1) Affine-Prym Construction and Its Scalar Two-Block Optimality**  
-  PDF: [`rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf`](rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf)  
-  Status: anonymous working draft.
+- [`index.html`](index.html) -- the public homepage.
+- [`rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf`](rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf) -- working draft.
+- [`landesman-litt-endpoint-petri-bottleneck.pdf`](landesman-litt-endpoint-petri-bottleneck.pdf) -- working note.
 
-- **An Endpoint Observation and a Petri-Type Bottleneck for Landesman-Litt Isomonodromy**  
-  PDF: [`landesman-litt-endpoint-petri-bottleneck.pdf`](landesman-litt-endpoint-petri-bottleneck.pdf)  
-  Status: anonymous working note.
+The page intentionally uses only static HTML/CSS and avoids personal metadata while the drafts are being prepared for public preprint or journal submission.
