@@ -5,45 +5,209 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FDmd233</title>
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 3rem auto;
-      max-width: 760px;
-      padding: 0 1rem;
-      line-height: 1.6;
-      color: #222;
+    :root {
+      --text: #202124;
+      --muted: #5f6368;
+      --line: #dadce0;
+      --link: #174ea6;
+      --bg-soft: #f8f9fa;
     }
-    h1 { margin-bottom: 0.25rem; }
-    .subtitle { color: #666; margin-top: 0; }
-    a { color: #0057b8; text-decoration: none; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.62;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 24px 56px;
+    }
+
+    header {
+      margin-bottom: 36px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2.1rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    nav {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      font-size: 0.96rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
     a:hover { text-decoration: underline; }
-    ul { padding-left: 1.25rem; }
-    li { margin-bottom: 1rem; }
-    .meta { color: #666; font-size: 0.95rem; margin-top: 0.25rem; }
+
+    section { margin: 34px 0; }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: #333;
+    }
+
+    .paper-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 18px;
+    }
+
+    .paper {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .paper-title {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+      font-weight: 650;
+      line-height: 1.45;
+    }
+
+    .meta {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .summary {
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .links {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-left: 3px solid var(--line);
+      background: var(--bg-soft);
+      color: #3c4043;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 640px) {
+      .page { padding: 32px 18px 44px; }
+      h1 { font-size: 1.75rem; }
+      .paper { padding: 16px; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>FDmd233</h1>
-    <p class="subtitle">Notes and papers</p>
-  </header>
+  <div class="page">
+    <header>
+      <h1>FDmd233</h1>
+      <p class="subtitle">Mathematics notes, preprints, and Lean formalization projects.</p>
+      <nav aria-label="Main navigation">
+        <a href="#notes">Notes</a>
+        <a href="#formalization">Formalization</a>
+        <a href="https://github.com/FDmd233">GitHub</a>
+      </nav>
+    </header>
 
-  <main>
-    <h2>Papers</h2>
-    <ul>
-      <li>
-        <a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">
-          A Rank (2g&minus;1) Affine-Prym Construction and Its Scalar Two-Block Optimality
-        </a>
-        <div class="meta">Anonymous working draft, May 2026.</div>
-      </li>
-      <li>
-        <a href="landesman-litt-endpoint-petri-bottleneck.pdf">
-          An Endpoint Observation and a Petri-Type Bottleneck for Landesman&ndash;Litt Isomonodromy
-        </a>
-        <div class="meta">Anonymous working note, May 2026. Conditional rank s+1 refinement in the closed unpointed case.</div>
-      </li>
-    </ul>
-  </main>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p class="intro">
+          This page collects a small number of public mathematical drafts and related formalization projects.
+          Some items are kept anonymous while they are being prepared for arXiv or journal submission.
+        </p>
+      </section>
+
+      <section id="notes">
+        <h2>Preprints and notes</h2>
+        <ul class="paper-list">
+          <li class="paper">
+            <p class="paper-title">
+              <a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">
+                A Rank (2g&minus;1) Affine-Prym Construction and Its Scalar Two-Block Optimality
+              </a>
+            </p>
+            <p class="meta">Working draft, May 2026.</p>
+            <p class="summary">
+              A construction and restricted optimality result for scalar two-block triangular Prym extensions.
+            </p>
+            <p class="links">
+              <a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">PDF</a>
+            </p>
+          </li>
+
+          <li class="paper">
+            <p class="paper-title">
+              <a href="landesman-litt-endpoint-petri-bottleneck.pdf">
+                An Endpoint Observation and a Petri-Type Bottleneck for Landesman&ndash;Litt Isomonodromy
+              </a>
+            </p>
+            <p class="meta">Working note, May 2026.</p>
+            <p class="summary">
+              An endpoint observation and a conditional rank <em>s</em>+1 refinement in the closed unpointed case.
+            </p>
+            <p class="links">
+              <a href="landesman-litt-endpoint-petri-bottleneck.pdf">PDF</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="formalization">
+        <h2>Lean formalization</h2>
+        <p>
+          Lean 4 examples and the Affine-Prym formalization subproject are collected in
+          <a href="https://github.com/FDmd233/lean4-math-showcase">FDmd233/lean4-math-showcase</a>.
+        </p>
+        <p class="note">
+          The Affine-Prym subproject records the linear-algebraic dependency skeleton of the lower-bound argument,
+          with Looijenga and Westwick inputs treated as named external assumptions rather than re-proved in Lean.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Last updated: May 2026.
+    </footer>
+  </div>
 </body>
 </html>
