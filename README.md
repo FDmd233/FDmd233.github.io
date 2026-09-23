@@ -1,10 +1,7 @@
 # FDmd233.github.io
 
-Minimal GitHub Pages site for public mathematical drafts.
+Public index for mathematical notes, preprints, and related formalization projects.
 
-## Contents
+The homepage is available at https://fdmd233.github.io/.
 
-- https://fdmd233.github.io/ -- the public homepage.
-- [`rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf`](rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf) -- working draft.
-- [`landesman-litt-endpoint-petri-bottleneck.pdf`](landesman-litt-endpoint-petri-bottleneck.pdf) -- working note.
-
+The site includes two early 2026 working drafts hosted directly in this repository and links to later project repositories on GitHub.
