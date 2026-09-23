@@ -12,7 +12,6 @@
       --link: #174ea6;
       --bg-soft: #f8f9fa;
     }
-
     body {
       margin: 0;
       color: var(--text);
@@ -20,115 +19,23 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.62;
     }
-
-    .page {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 48px 24px 56px;
-    }
-
-    header {
-      margin-bottom: 36px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    h1 {
-      margin: 0 0 6px;
-      font-size: 2.1rem;
-      font-weight: 650;
-      letter-spacing: -0.02em;
-    }
-
-    .subtitle {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    nav {
-      margin-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px 18px;
-      font-size: 0.96rem;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
+    .page { max-width: 880px; margin: 0 auto; padding: 48px 24px 56px; }
+    header { margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0 0 6px; font-size: 2.1rem; font-weight: 650; letter-spacing: -0.02em; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 1.05rem; }
+    nav { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px 18px; font-size: 0.96rem; }
+    a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     section { margin: 34px 0; }
-
-    h2 {
-      margin: 0 0 14px;
-      font-size: 1.35rem;
-      font-weight: 650;
-      letter-spacing: -0.01em;
-    }
-
-    .intro {
-      max-width: 720px;
-      color: #333;
-    }
-
-    .paper-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 18px;
-    }
-
-    .paper {
-      padding: 18px 20px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: #fff;
-    }
-
-    .paper-title {
-      margin: 0 0 6px;
-      font-size: 1.05rem;
-      font-weight: 650;
-      line-height: 1.45;
-    }
-
-    .meta {
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .summary {
-      margin: 0 0 10px;
-      color: #333;
-    }
-
-    .links {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .note {
-      padding: 14px 16px;
-      border-left: 3px solid var(--line);
-      background: var(--bg-soft);
-      color: #3c4043;
-    }
-
-    footer {
-      margin-top: 42px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
+    h2 { margin: 0 0 14px; font-size: 1.35rem; font-weight: 650; letter-spacing: -0.01em; }
+    .intro { max-width: 720px; color: #333; }
+    .paper-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+    .paper { padding: 18px 20px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+    .paper-title { margin: 0 0 6px; font-size: 1.05rem; font-weight: 650; line-height: 1.45; }
+    .meta { margin: 0 0 10px; color: var(--muted); font-size: 0.94rem; }
+    .summary { margin: 0 0 10px; color: #333; }
+    .links { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
     @media (max-width: 640px) {
       .page { padding: 32px 18px 44px; }
       h1 { font-size: 1.75rem; }
@@ -142,8 +49,8 @@
       <h1>FDmd233</h1>
       <p class="subtitle">Mathematics notes, preprints, and Lean formalization projects.</p>
       <nav aria-label="Main navigation">
-        <a href="#notes">Notes</a>
-        <a href="#formalization">Formalization</a>
+        <a href="#projects">Projects</a>
+        <a href="#earlier-notes">Earlier notes</a>
         <a href="https://github.com/FDmd233">GitHub</a>
       </nav>
     </header>
@@ -152,61 +59,64 @@
       <section id="about">
         <h2>About</h2>
         <p class="intro">
-          This page collects a small number of mathematical drafts and related formalization projects.
+          This page indexes selected mathematical projects and accompanying computational or formal verification material.
         </p>
       </section>
 
-      <section id="notes">
-        <h2>Preprints and notes</h2>
+      <section id="projects">
+        <h2>Selected projects</h2>
         <ul class="paper-list">
           <li class="paper">
-            <p class="paper-title">
-              <a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">
-                A Rank (2g&minus;1) Affine-Prym Construction and Its Scalar Two-Block Optimality
-              </a>
-            </p>
-            <p class="meta">Working draft, May 2026.</p>
-            <p class="summary">
-              A construction and restricted optimality result for scalar two-block triangular Prym extensions.
-            </p>
-            <p class="links">
-              <a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">PDF</a>
-            </p>
+            <p class="paper-title"><a href="https://github.com/FDmd233/lean4-math-showcase/tree/main/projects/erdos-906-sparse-fock">Erdős Problem 906: sparse Fock series</a></p>
+            <p class="meta">2026 · complex analysis · Lean 4</p>
+            <p class="summary">An explicit sparse Fock construction with quantitative localization of zeros of high derivatives and a formalized (p=3/2) theorem package.</p>
           </li>
-
           <li class="paper">
-            <p class="paper-title">
-              <a href="landesman-litt-endpoint-petri-bottleneck.pdf">
-                An Endpoint Observation and a Petri-Type Bottleneck for Landesman&ndash;Litt Isomonodromy
-              </a>
-            </p>
-            <p class="meta">Working note, May 2026.</p>
-            <p class="summary">
-              An endpoint observation and a conditional rank <em>s</em>+1 refinement in the closed unpointed case.
-            </p>
-            <p class="links">
-              <a href="landesman-litt-endpoint-petri-bottleneck.pdf">PDF</a>
-            </p>
+            <p class="paper-title"><a href="https://github.com/FDmd233/litt-problem-13-g2">A Realization of G2 for Litt Problem No. 13</a></p>
+            <p class="meta">2026 · algebraic geometry</p>
+            <p class="summary">A construction of a theta surface whose convolution Tannaka group is (G_2) in its seven-dimensional representation.</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title"><a href="https://github.com/FDmd233/litt-problem-13-f4">A Realization of F4 for Litt Problem No. 13</a></p>
+            <p class="meta">2026 · algebraic geometry</p>
+            <p class="summary">A realization of the simple group of type (F_4) as a convolution Tannaka group arising from an integral surface in an abelian fourfold.</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title"><a href="https://github.com/FDmd233/prill-raynaud-covers">Prill-Exceptional Étale Covers from Raynaud Bundles</a></p>
+            <p class="meta">2026 · algebraic geometry</p>
+            <p class="summary">Finite étale covers for which every fibre divisor moves in a pencil, constructed using Raynaud bundles and finite monodromy.</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title"><a href="https://github.com/FDmd233/multiplicative-area-potentials">Multiplicative Area Potentials for Edge-Point Assignments in Convex Polygons</a></p>
+            <p class="meta">2026 · discrete and computational geometry</p>
+            <p class="summary">A multiplicative potential proving termination of Bui's edge-point swap process, with capacitated and subdivision extensions.</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title"><a href="https://github.com/FDmd233/strengthened-szeged-wiener-conjecture">The Strengthened Szeged-Wiener Conjecture</a></p>
+            <p class="meta">2026 · graph theory</p>
+            <p class="summary">A proposed proof accompanied by an exact finite certificate; the repository states its verification status and scope explicitly.</p>
           </li>
         </ul>
       </section>
 
-      <section id="formalization">
-        <h2>Lean formalization</h2>
-        <p>
-          Lean 4 examples and the Affine-Prym formalization subproject are collected in
-          <a href="https://github.com/FDmd233/lean4-math-showcase">FDmd233/lean4-math-showcase</a>.
-        </p>
-        <p class="note">
-          The Affine-Prym subproject records the linear-algebraic dependency skeleton of the lower-bound argument,
-          with Looijenga and Westwick inputs treated as named external assumptions rather than re-proved in Lean.
-        </p>
+      <section id="earlier-notes">
+        <h2>Earlier notes</h2>
+        <ul class="paper-list">
+          <li class="paper">
+            <p class="paper-title"><a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">A Rank (2g&minus;1) Affine-Prym Construction and Its Scalar Two-Block Optimality</a></p>
+            <p class="meta">Working draft, May 2026.</p>
+            <p class="links"><a href="rank-2g-minus-1-affine-prym-construction-scalar-two-block-optimality.pdf">PDF</a></p>
+          </li>
+          <li class="paper">
+            <p class="paper-title"><a href="landesman-litt-endpoint-petri-bottleneck.pdf">An Endpoint Observation and a Petri-Type Bottleneck for Landesman&ndash;Litt Isomonodromy</a></p>
+            <p class="meta">Working note, May 2026.</p>
+            <p class="links"><a href="landesman-litt-endpoint-petri-bottleneck.pdf">PDF</a></p>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer>
-      Last updated: May 2026.
-    </footer>
+    <footer>Last updated: September 2026.</footer>
   </div>
 </body>
 </html>
