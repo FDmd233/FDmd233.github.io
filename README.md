@@ -1,7 +1,7 @@
 # FDmd233.github.io
 
-Public index for selected mathematical projects, preprints, and related formalization work.
+Public index for selected mathematical projects, preprints, and formalization work maintained in this GitHub account.
 
-The homepage is available at https://fdmd233.github.io/.
+The site is available at <https://fdmd233.github.io/>.
 
-The site links to current project repositories on GitHub.
+It links to current project repositories, manuscripts, source files, and formal verification material where available.
