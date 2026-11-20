@@ -14,7 +14,7 @@
   "url": "https://fdmd233.github.io/preprints/cycles-without-clumps/",
   "encoding": {
     "@type": "MediaObject",
-    "contentUrl": "https://raw.githubusercontent.com/FDmd233/cycles-without-clumps/main/paper/paper.pdf",
+    "contentUrl": "https://github.com/FDmd233/cycles-without-clumps/releases/download/v0.3.0-preprint/paper.pdf",
     "encodingFormat": "application/pdf"
   },
   "keywords": [
