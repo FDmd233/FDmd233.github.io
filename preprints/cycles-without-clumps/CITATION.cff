@@ -1,8 +1,0 @@
-cff-version: 1.2.0
-message: 'If you use the results, cite the unrefereed preprint and its version.'
-title: 'Cycles without clumps: a coreless étale correspondence in characteristic two'
-authors:
-  - name: OpenAI
-version: '0.2'
-date-released: '2026-11-20'
-abstract: 'An explicit proposed coreless, clump-free, symmetric finite étale correspondence in characteristic two.'
