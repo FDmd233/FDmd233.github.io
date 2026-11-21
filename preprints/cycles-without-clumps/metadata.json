@@ -7,14 +7,14 @@
     "name": "OpenAI"
   },
   "datePublished": "2026-11-21",
-  "version": "0.4",
+  "version": "0.5",
   "inLanguage": "en",
   "isAccessibleForFree": true,
-  "abstract": "An explicit symmetric degree-25 finite étale self-correspondence of a genus-two curve in characteristic two. It is minimal, coreless and clump-free, while its generic graph contains K5,5 and is not three-arc-transitive. The diagonal cyclic base-change family remains symmetric; independently chosen mixed-endpoint families yield K_{n,m} subgraphs and may have different endpoint genera.",
+  "abstract": "A symmetric degree-25 finite étale self-correspondence of a genus-two curve in characteristic two. It is minimal and coreless, has no nonempty finite clump, and its generic graph contains K5,5. Connected cyclic base changes preserve minimality under the stated coprimality conditions; diagonal base changes remain symmetric, while mixed-endpoint examples may have different genera.",
   "url": "https://fdmd233.github.io/preprints/cycles-without-clumps/",
   "encoding": {
     "@type": "MediaObject",
-    "contentUrl": "https://github.com/FDmd233/cycles-without-clumps/releases/download/v0.4.0-preprint/paper.pdf",
+    "contentUrl": "https://github.com/FDmd233/cycles-without-clumps/releases/download/v0.5.0-preprint/paper.pdf",
     "encodingFormat": "application/pdf"
   },
   "keywords": [
